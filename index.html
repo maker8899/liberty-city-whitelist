@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#09070f">
+<title>LIBERTY CITY | التفعيل الكتابي</title>
+<style>
+:root{--bg:#09070f;--panel:#15111f;--panel2:#201632;--purple:#7629f5;--light:#c68aff;--white:#f7f3ff;--muted:#b8adc9;--line:#342346;--green:#68e0a1}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#241044 0,#09070f 45%);color:var(--white);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100vh}
+header{position:sticky;top:0;z-index:5;background:#0b0813ed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:12px 16px;display:flex;align-items:center;gap:12px}
+.logo{width:48px;height:48px;border-radius:15px;background:linear-gradient(140deg,#a45aff,#4b0de0);display:grid;place-items:center;font-weight:1000;font-size:20px;color:white;box-shadow:0 0 25px #7629f555;flex-shrink:0}
+.brand{font-weight:900;letter-spacing:1px}.sub{font-size:11px;color:var(--muted);letter-spacing:1.5px}
+nav{display:flex;gap:7px;flex-wrap:wrap;padding:12px 14px;justify-content:center}
+button,.navbtn{border:1px solid var(--line);background:#171020;color:var(--white);padding:11px 14px;border-radius:12px;font-weight:700;cursor:pointer;font-size:14px}
+button.primary{background:linear-gradient(120deg,#8e40ff,#5c18d7);border:0;box-shadow:0 8px 24px #7629f533}
+button:hover,.navbtn:hover{border-color:var(--light)}
+main{max-width:850px;margin:0 auto;padding:10px 16px 60px}
+.hero{border:1px solid #57318a;border-radius:24px;padding:25px 20px;background:linear-gradient(135deg,#281047e8,#100b19ef);position:relative;overflow:hidden}
+.hero:after{content:"LB";position:absolute;left:-4px;bottom:-40px;font-size:170px;font-weight:1000;color:#a76aff0d;pointer-events:none}
+.tag{display:inline-block;color:#e0c5ff;background:#6422b833;border:1px solid #7e3de0;border-radius:999px;padding:6px 10px;font-size:12px}
+h1{font-size:clamp(29px,7vw,47px);line-height:1.12;margin:17px 0 12px}h2{font-size:24px;margin:0 0 10px}p{line-height:1.8;color:var(--muted);margin:8px 0 16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:16px 0}
+.card,.section{background:#120e1b;border:1px solid var(--line);border-radius:18px;padding:17px;margin-bottom:14px}
+.card strong{display:block;margin:8px 0}.icon{font-size:23px;color:var(--light)}
+label{display:block;margin:13px 0 7px;font-weight:700;font-size:14px}
+input,textarea,select{width:100%;padding:13px;background:#0b0811;border:1px solid #453058;border-radius:12px;color:white;font:inherit;outline:none}
+input:focus,textarea:focus,select:focus{border-color:var(--light)}textarea{min-height:90px;resize:vertical}
+.rule{padding:13px;border-bottom:1px solid var(--line)}.rule:last-child{border:0}
+.question{padding:15px 0;border-bottom:1px solid var(--line)}.question label{font-weight:500;display:flex;gap:9px;align-items:flex-start}.question input{width:auto;margin-top:5px;accent-color:var(--purple)}
+.status{border-radius:999px;background:#3c2b50;color:#e6d2ff;padding:4px 9px;font-size:12px;display:inline-block}
+.small{font-size:12px;color:#9e91b1}.hidden{display:none!important}.notice{border:1px solid #7853a3;background:#211631;padding:12px;border-radius:12px;color:#e1d1f6;font-size:13px;line-height:1.7}
+.row{display:flex;gap:10px;flex-wrap:wrap}.row>*{flex:1;min-width:130px}.appitem{border:1px solid var(--line);border-radius:14px;padding:13px;margin-top:10px}.appitem p{margin:5px 0}.footer{text-align:center;color:#82758f;font-size:12px;padding:25px 0}
+a{color:#d7b5ff}hr{border:0;border-top:1px solid var(--line);margin:18px 0}
+@media(min-width:650px){header{padding-inline:calc((100% - 820px)/2)}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">LB</div><div><div class="brand">LIBERTY CITY</div><div class="sub">REAL LIFE ROBLOX SERVER</div></div>
+  <div style="margin-right:auto"><span class="status">WHITELIST</span></div>
+</header>
+<nav>
+  <button onclick="showPage('home')">الرئيسية</button>
+  <button onclick="showPage('rules')">القوانين</button>
+  <button onclick="showPage('apply')">التفعيل الكتابي</button>
+  <button onclick="showPage('status')">طلباتي</button>
+  <button onclick="showPage('admin')">لوحة الإدارة</button>
+</nav>
+<main>
+<section id="home">
+ <div class="hero">
+  <span class="tag">OFFICIAL WHITELIST PORTAL</span>
+  <h1>أثبت جاهزيتك،<br><span style="color:var(--light)">وادخل Liberty City.</span></h1>
+  <p>بوابة التفعيل الكتابي الرسمية التجريبية. اقرأ القوانين، أجب عن أسئلة الرول بلاي، ثم أرسل طلبك للمراجعة.</p>
+  <button class="primary" onclick="showPage('apply')">ابدأ التفعيل ←</button>
+ </div>
+ <div class="cards">
+  <div class="card"><div class="icon">▤</div><strong>قوانين واضحة</strong><p>راجع أساسيات الرول بلاي قبل الاختبار.</p><button onclick="showPage('rules')">عرض القوانين</button></div>
+  <div class="card"><div class="icon">✎</div><strong>اختبار كتابي</strong><p>أسئلة اختيارية ومواقف داخل المدينة.</p><button onclick="showPage('apply')">ابدأ الاختبار</button></div>
+  <div class="card"><div class="icon">♙</div><strong>مراجعة إدارية</strong><p>حالة الطلب تظهر في هذا المتصفح التجريبي.</p><button onclick="showPage('status')">متابعة الطلب</button></div>
+ </div>
+ <div class="notice">نسخة أولية: الطلبات تُحفظ على نفس الجهاز والمتصفح فقط. قبل النشر الحقيقي نحتاج قاعدة بيانات وتسجيل دخول آمن حتى لا يراها أو يغيّرها أي شخص.</div>
+</section>
+
+<section id="rules" class="hidden">
+ <div class="section"><span class="tag">CITY REGULATIONS</span><h1>قوانين المدينة</h1><p>اقرأ القواعد التالية قبل تقديم طلبك. يمكن للإدارة تعديلها لتطابق قوانين السيرفر الرسمية.</p>
+ <div class="rule"><strong>RDM — القتل العشوائي</strong><p>ممنوع الاعتداء على لاعب أو قتله دون سبب رول بلاي مقبول.</p></div>
+ <div class="rule"><strong>VDM — استخدام المركبة كسلاح</strong><p>ممنوع دهس اللاعبين عمدًا دون مبرر رول بلاي صحيح.</p></div>
+ <div class="rule"><strong>Fear RP — الخوف على الحياة</strong><p>تصرّف بما يناسب خطورة الموقف ولا تتجاهل تهديدًا جديًا لحياتك.</p></div>
+ <div class="rule"><strong>NLR — العودة للحياة</strong><p>بعد موت شخصيتك، لا تستخدم معلومات أو أحداث حياتها السابقة بشكل يخالف قوانين السيرفر.</p></div>
+ <div class="rule"><strong>MetaGaming — خلط المعلومات</strong><p>لا تستخدم معلومات حصلت عليها خارج اللعبة داخل الرول بلاي.</p></div>
+ <div class="rule"><strong>PowerGaming</strong><p>لا تفرض نتيجة فعل على لاعب آخر ولا تنفذ أفعالًا غير منطقية أو مستحيلة.</p></div>
+ <div class="rule"><strong>Combat Logging</strong><p>لا تخرج من اللعبة لتجنب توقيف أو سيناريو رول بلاي.</p></div>
+ <div class="rule"><strong>احترام الجميع</strong><p>التزم بتوجيهات الإدارة وتجنب الإهانة أو التخريب.</p></div>
+ </div>
+</section>
+
+<section id="apply" class="hidden">
+ <div class="section"><span class="tag">APPLICATION FORM</span><h1>التفعيل الكتابي</h1><p>املأ البيانات وأجب عن الأسئلة بصدق. هذه النسخة التجريبية تستخدم نتيجة تلقائية للأسئلة الاختيارية، والإدارة يمكنها مراجعة الطلب يدويًا.</p>
+ <form id="applicationForm">
+  <label for="roblox">اسم Roblox</label><input id="roblox" required maxlength="40" placeholder="مثال: LibertyPlayer">
+  <label for="discord">اسم Discord (بدون كلمة مرور)</label><input id="discord" required maxlength="60" placeholder="اسم المستخدم فقط">
+  <label for="age">العمر</label><input id="age" required type="number" min="10" max="99" placeholder="العمر">
+  <label for="experience">هل لديك خبرة في الرول بلاي؟</label><select id="experience" required><option value="">اختر إجابة</option><option>نعم</option><option>لا، أتعلم</option></select>
+  <hr><h2>أسئلة الاختبار</h2>
+  <div class="question"><strong>1. ما معنى RDM؟</strong>
+   <label><input type="radio" name="q1" value="a" required> استخدام السيارة بشكل عشوائي</label>
+   <label><input type="radio" name="q1" value="b"> الاعتداء أو القتل دون سبب رول بلاي مقبول</label>
+   <label><input type="radio" name="q1" value="c"> الخروج من السيرفر</label>
+  </div>
+  <div class="question"><strong>2. شخص هدّدك بسلاح في موقف جدي، كيف تتصرف؟</strong>
+   <label><input type="radio" name="q2" value="a" required> أتجاهله وأهاجمه دائمًا</label>
+   <label><input type="radio" name="q2" value="b"> أتصرف بما يناسب الخطر وأحافظ على حياة الشخصية</label>
+   <label><input type="radio" name="q2" value="c"> أخرج من اللعبة</label>
+  </div>
+  <div class="question"><strong>3. شاهدت معلومة في بث خارج اللعبة. هل تستخدمها داخل الرول بلاي؟</strong>
+   <label><input type="radio" name="q3" value="a" required> نعم، لأنها معلومة أعرفها</label>
+   <label><input type="radio" name="q3" value="b"> لا، هذا خلط للمعلومات (MetaGaming)</label>
+   <label><input type="radio" name="q3" value="c"> فقط إذا طلب صديقي</label>
+  </div>
+  <div class="question"><strong>4. أثناء توقيفك من الشرطة، ماذا تفعل؟</strong>
+   <label><input type="radio" name="q4" value="a" required> أخرج من اللعبة لتجنب التوقيف</label>
+   <label><input type="radio" name="q4" value="b"> أواصل السيناريو وألتزم بالقوانين</label>
+   <label><input type="radio" name="q4" value="c"> أبدأ بإزعاج اللاعبين</label>
+  </div>
+  <label for="scenario">5. اشرح باختصار كيف تتصرف إذا وقع حادث سيارة داخل المدينة.</label><textarea id="scenario" required maxlength="700" placeholder="اكتب إجابتك هنا..."></textarea>
+  <label style="display:flex;gap:10px;align-items:flex-start;font-weight:500"><input id="agree" type="checkbox" required style="width:auto;margin-top:5px"> أؤكد أنني قرأت القوانين وأن المعلومات التي أدخلتها صحيحة.</label>
+  <button class="primary" type="submit" style="width:100%;margin-top:15px">إرسال الطلب</button>
+ </form>
+ <div id="formResult" class="notice hidden" style="margin-top:15px"></div>
+ </div>
+</section>
+
+<section id="status" class="hidden">
+ <div class="section"><span class="tag">APPLICATION STATUS</span><h1>متابعة الطلبات</h1><p>أدخل اسم Roblox الذي استخدمته عند التقديم على هذا الجهاز.</p>
+ <label for="lookup">اسم Roblox</label><input id="lookup" placeholder="اسم اللاعب">
+ <button class="primary" onclick="lookupApplication()">بحث عن الطلب</button><div id="lookupResult"></div>
+ </div>
+</section>
+
+<section id="admin" class="hidden">
+ <div class="section"><span class="tag">STAFF PANEL · DEMO</span><h1>لوحة الإدارة العليا</h1>
+ <div class="notice">تنبيه أمني: هذه لوحة تجريبية بلا تسجيل دخول حقيقي. لا تنشر هذه النسخة مع بيانات حقيقية؛ أي شخص يستطيع فتح أدوات المتصفح والتلاعب بالتخزين المحلي. نضيف حماية وقاعدة بيانات عند إعداد النسخة المتصلة.</div>
+ <p>طلبات هذا المتصفح: <strong id="totalApps">0</strong></p><div class="row"><button onclick="renderAdmin()">تحديث القائمة</button><button onclick="exportApps()">تصدير JSON</button></div>
+ <div id="adminList"></div>
+ </div>
+</section>
+<div class="footer">LIBERTY CITY • REAL LIFE ROBLOX SERVER<br>نسخة أولية للتجربة — ليست نظام تفعيل منشورًا بعد</div>
+</main>
+<script>
+const KEY='liberty_city_demo_applications_v1';
+function getApps(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){return []}}
+function saveApps(a){localStorage.setItem(KEY,JSON.stringify(a))}
+function showPage(id){document.querySelectorAll('main section[id]').forEach(s=>s.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'});if(id==='admin')renderAdmin()}
+document.getElementById('applicationForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const answers={q1:document.querySelector('input[name="q1"]:checked')?.value,q2:document.querySelector('input[name="q2"]:checked')?.value,q3:document.querySelector('input[name="q3"]:checked')?.value,q4:document.querySelector('input[name="q4"]:checked')?.value};
+ const score=(answers.q1==='b')+(answers.q2==='b')+(answers.q3==='b')+(answers.q4==='b');
+ const app={id:'LC-'+Date.now().toString().slice(-7),roblox:document.getElementById('roblox').value.trim(),discord:document.getElementById('discord').value.trim(),age:document.getElementById('age').value,experience:document.getElementById('experience').value,answers,scenario:document.getElementById('scenario').value.trim(),score,status:'قيد المراجعة',created:new Date().toLocaleString('ar-DZ')};
+ const apps=getApps();apps.unshift(app);saveApps(apps);
+ const out=document.getElementById('formResult');out.classList.remove('hidden');out.innerHTML='تم حفظ الطلب على هذا الجهاز. رقم الطلب: <strong>'+app.id+'</strong><br>نتيجة الأسئلة الاختيارية: '+score+'/4. الحالة: <strong>قيد المراجعة</strong>.<br>احتفظ برقم الطلب. هذه النسخة لا ترسل البيانات إلى خادم أو Discord.';
+ this.reset();showPage('apply');document.getElementById('formResult').classList.remove('hidden');document.getElementById('formResult').scrollIntoView({behavior:'smooth',block:'center'});
+});
+function lookupApplication(){const name=document.getElementById('lookup').value.trim().toLowerCase();const el=document.getElementById('lookupResult');if(!name){el.innerHTML='<p>اكتب اسم Roblox أولًا.</p>';return}const apps=getApps().filter(a=>a.roblox.toLowerCase()===name);el.innerHTML=apps.length?apps.map(a=>'<div class="appitem"><strong>'+esc(a.id)+'</strong> <span class="status">'+esc(a.status)+'</span><p>النتيجة: '+a.score+'/4</p><p class="small">'+esc(a.created)+'</p></div>').join(''):'<p>لم نجد طلبًا بهذا الاسم في هذا المتصفح.</p>'}
+function renderAdmin(){const apps=getApps();document.getElementById('totalApps').textContent=apps.length;const el=document.getElementById('adminList');if(!apps.length){el.innerHTML='<p>لا توجد طلبات محفوظة بعد.</p>';return}el.innerHTML=apps.map(a=>'<div class="appitem"><div class="row"><div><strong>'+esc(a.roblox)+'</strong><p class="small">'+esc(a.id)+' • '+esc(a.created)+'</p></div><div><span class="status">'+esc(a.status)+'</span><p>الاختبار: '+a.score+'/4</p></div></div><p>Discord: '+esc(a.discord)+' | العمر: '+esc(a.age)+'</p><p>الخبرة: '+esc(a.experience)+'</p><p><strong>الموقف:</strong> '+esc(a.scenario)+'</p><p><strong>الاختيارات:</strong> '+Object.entries(a.answers).map(([k,v])=>k+':'+v).join('، ')+'</p><div class="row"><button onclick="setStatus(\''+a.id+'\',\'مقبول\')">قبول</button><button onclick="setStatus(\''+a.id+'\',\'مرفوض\')">رفض</button><button onclick="setStatus(\''+a.id+'\',\'قيد المراجعة\')">إعادة للمراجعة</button><button onclick="deleteApp(\''+a.id+'\')">حذف</button></div></div>').join('')}
+function setStatus(id,status){const apps=getApps();const a=apps.find(x=>x.id===id);if(a){a.status=status;saveApps(apps);renderAdmin()}}
+function deleteApp(id){if(!confirm('هل تريد حذف هذا الطلب من هذا المتصفح؟'))return;saveApps(getApps().filter(a=>a.id!==id));renderAdmin()}
+function exportApps(){const data=JSON.stringify(getApps(),null,2);const blob=new Blob([data],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='liberty-city-applications.json';a.click();URL.revokeObjectURL(url)}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+</script>
+</body>
+</html>
